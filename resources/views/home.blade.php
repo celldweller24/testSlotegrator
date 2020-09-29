@@ -13,9 +13,15 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
                 </div>
+
+                <div class="main-button">
+                    <form action="{{ route('process') }}" method="POST">
+                        @csrf
+                        <button>CLick me</button>
+                    </form>
+                </div>
+
             </div>
         </div>
     </div>

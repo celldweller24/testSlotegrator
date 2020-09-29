@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/process', 'ProcessController@index')->name('process');
+
+Route::any('/money', 'MoneyWonController@index')->name('money');
